@@ -2,8 +2,6 @@ import React from 'react';
 import { evaluate } from 'mathjs';
 import "./App.css";
 
-const buttons = ['<-', '(',')','^','7','8','9','/','4','5','6','*','1','2','3','-','0','.','=','+']
-
 class App extends React.Component {
   constructor(){
     super();
@@ -59,5 +57,7 @@ class App extends React.Component {
     );
   }
 }
+
+const buttons = ['<-', '(',')','^','7','8','9','/','4','5','6','*','1','2','3','-','0','.','=','+']
 
 export default App;
