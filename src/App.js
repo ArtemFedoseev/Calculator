@@ -20,7 +20,7 @@ class App extends React.Component {
   handleKeyPress = (key) => {
     let expression = this.state.expression;
     let newExpression = '';
-    if (key != '<-') {
+    if (key != '<-' && key != '=') {
       newExpression = expression+key;
     } else if (key != '=') {
       newExpression = expression.slice(0,expression.length-1);
